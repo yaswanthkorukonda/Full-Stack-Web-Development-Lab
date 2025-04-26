@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #1a2f37, #1cbbb4);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1A2E35;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+    }
+    .left-content, .right-content {
+        flex: unset;
+        width: 100%;
+        padding: 30px 16px;
+        box-sizing: border-box;
+    }
+    .left-content {
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .right-content {
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.left-content {
+    background-color: #1A2E35;
+    flex: 1;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.main-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about-btn {
+    background-color: #FF4B2B;
+    color: white;
+}
+
+.quote-btn {
+    background-color: #ffffff;
+    color: #1A2E35;
+}
+
+/* Right Content */
+.right-content {
+    background-color: #1CBBB4;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* You can add your textbox and button inside this */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* space between textbox and button */
+}
+
+.input-field {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background: #f9f9f9;
+    transition: border-color 0.2s;
+}
+
+.input-field:focus {
+    border-color: #1CBBB4;
+}
+
+.generate-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: #1A2E35;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.generate-btn:hover,
+.generate-btn:focus {
+    background-color: #FF4B2B;
+    color: #fff;
+}
